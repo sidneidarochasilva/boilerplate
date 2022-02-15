@@ -1,7 +1,20 @@
-const Main = () =>( 
+import * as S from "./styles";
 
-<main>
-   <h1>react avançado</h1>
-</main>)
+const Main = () => (
+  <S.Wrapper>
+    <S.Logo
+      src="/img/logo.svg"
+      alt="Imagem de um átomo e react Avançado escrito ao lado"
+    />
+    <S.Title>react avançado</S.Title>
+    <S.Description>
+      Type Script, ReactJS, NextJS e Styled Components
+    </S.Description>
+    <S.Illustration
+      src="/img/hero-illustration.svg"
+      alt="Um desenvolvedor de frete para uma tela com código."
+    />
+  </S.Wrapper>
+);
 
-export default Main
+export default Main;
